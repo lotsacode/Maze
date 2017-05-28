@@ -3,7 +3,7 @@
 Example usage with explicit default options
 
     var maze = new Maze({
-            cols: 25,         // amount of cell columns
+	    cols: 25,         // amount of cell columns
 	    rows: 25,         // amount of cell rows
 	    scale: 10,        // scale of maze
 	    thickness: 2,     // thickness of maze walls
