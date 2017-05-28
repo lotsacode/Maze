@@ -145,5 +145,5 @@ var Maze = function(opts) {
 			}
 		}
 	}
-	return geometry;
+	return {cells: cells, geometry: geometry};
 }
