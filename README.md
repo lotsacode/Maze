@@ -11,6 +11,6 @@ Example usage with explicit default options
 	    open: true,       // include start and end doors?
 	    rnd: Math.random  // custom random sampler (between 0 and 1)
     });
-    scene.add(new THREE.Mesh(maze, material).geometry);
+    scene.add(new THREE.Mesh(maze.geometry, material));
 
 The returned object also contains <code>cells</code> which is the data structure for the maze
