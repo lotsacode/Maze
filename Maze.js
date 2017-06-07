@@ -145,5 +145,25 @@ var Maze = function(opts) {
 			}
 		}
 	}
+	// Move origin to maze center
+	geometry.applyMatrix( new THREE.Matrix4().makeTranslation(-cols*scale/2, -rows*scale/2, 0) );
 	return {cells: cells, geometry: geometry};
 }
+
+/*
+var collides = function(x, y) {
+	// Note that any rotation or translation on the Mesh need to be reversed on the input
+	for (var i = 0; i < cells.length; i++) {
+		for (var j = 0; j < cells[i].length; j++) {
+			var cx = i*scale;
+			var cy = j*scale;
+			var rr = (cx-x)*(cx-x) + (cy-y)*(cy-y);
+			if (rr > scale*scale) continue;
+			// Collide with left wall?
+			if (x > cx - scale/2 - thickness/2 && x < cx - scale/2 + thickness/2
+				&&
+
+		}
+	}
+}
+*/
